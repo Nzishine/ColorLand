@@ -17,6 +17,11 @@ TagManager:
   - Brown
   - Green
   - Spike
+  - Lighter1
+  - Light1
+  - Lighter2
+  - Light2
+  - Lights
   layers:
   - Default
   - TransparentFX
