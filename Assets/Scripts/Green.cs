@@ -2,46 +2,45 @@ using UnityEngine;
 
 public class GreenEnvironmet : MonoBehaviour
 {
-    private GameObject player;
-    private GameObject box;
+ 
 
-    private GameObject mist;
+    private GameObject player;
+    private GameObject Circle;
     private SpriteRenderer[] environmentRenderers; 
 
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-        box = GameObject.FindGameObjectWithTag("Box2");
-        mist = GameObject.FindGameObjectWithTag("Mist");
+        Circle = GameObject.FindGameObjectWithTag("Green");
+        
+
        
         
         GameObject[] envi = GameObject.FindGameObjectsWithTag("Environment");
-        environmentRenderers = new SpriteRenderer[envi.Length];
+     
         
-        for(int i = 0; i < envi.Length; i++)
-        {
-            environmentRenderers[i] = envi[i].GetComponent<SpriteRenderer>();
+            environmentRenderers = new SpriteRenderer[envi.Length];
+            for(int i = 0; i < envi.Length; i++)
+            {
+                environmentRenderers[i] = envi[i].GetComponent<SpriteRenderer>();
+               
+            }
         }
-    }
+    
 
     private void OnCollisionEnter2D(Collision2D other)
     {
+
         if (other.gameObject.CompareTag("Player"))
         {
-            box.SetActive(false);
-            mist.SetActive(false);
-            foreach(SpriteRenderer renderer in environmentRenderers)
-            {
-                if(renderer != null)
+            Destroy(Circle);
+                foreach(SpriteRenderer renderer in environmentRenderers)
                 {
-                    renderer.color = new Color(
-                       1f,
-                       1f,
-                       1f,
-                        1f
-                    );
+
+                        renderer.color = Color.white; 
+
                 }
-            }
         }
-    }
+        
+}
 }
