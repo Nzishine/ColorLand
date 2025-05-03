@@ -9,6 +9,13 @@ TagManager:
   - Environment
   - Mist
   - Box2
+  - box3
+  - Enemy-M
+  - Ground
+  - Water
+  - Box4
+  - Brown
+  - Green
   layers:
   - Default
   - TransparentFX
@@ -45,4 +52,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: player
+    uniqueID: 343452291
+    locked: 0
+  - name: Water
+    uniqueID: 3035469223
     locked: 0

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Environment : MonoBehaviour
+public class GreenEnvironmet : MonoBehaviour
 {
     private GameObject player;
     private GameObject box;
@@ -32,14 +32,15 @@ public class Environment : MonoBehaviour
             mist.SetActive(false);
             foreach(SpriteRenderer renderer in environmentRenderers)
             {
-                
+                if(renderer != null)
+                {
                     renderer.color = new Color(
                        1f,
                        1f,
                        1f,
                         1f
                     );
-                
+                }
             }
         }
     }

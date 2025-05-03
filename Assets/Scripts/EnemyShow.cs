@@ -4,7 +4,8 @@ public class EnemyShow : MonoBehaviour
 {
     private GameObject player;
     private GameObject box;
-    private SpriteRenderer[] enemyRenderers; // آرایه برای تمام رندررهای دشمنان
+    private SpriteRenderer[] enemyRenderers;
+     // آرایه برای تمام رندررهای دشمنان
 
     void Start()
     {
