@@ -2,11 +2,11 @@ using UnityEngine;
 
 public class Lighter3 : MonoBehaviour
 {
-    private GameObject player;
-    private GameObject box;
+    public GameObject player;
+    public GameObject box;
 
-    private GameObject Mist;
-    private SpriteRenderer[] LightsRenderers;
+    public GameObject Mist;
+    public SpriteRenderer[] LightsRenderers;
    
 
     void Start()

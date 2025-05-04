@@ -4,9 +4,9 @@ public class GreenEnvironmet : MonoBehaviour
 {
  
 
-    private GameObject player;
-    private GameObject Circle;
-    private SpriteRenderer[] environmentRenderers; 
+    public GameObject player;
+    public GameObject Circle;
+    public SpriteRenderer[] environmentRenderers; 
 
     void Start()
     {
@@ -37,7 +37,7 @@ public class GreenEnvironmet : MonoBehaviour
                 foreach(SpriteRenderer renderer in environmentRenderers)
                 {
 
-                        renderer.color = Color.white; 
+                        renderer.color = new Color(1f,1f,1f,1f); 
 
                 }
         }

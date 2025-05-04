@@ -2,17 +2,17 @@ using UnityEngine;
 
 public class EnemyShow : MonoBehaviour
 {
-    private GameObject player;
-    private GameObject box;
-    private SpriteRenderer[] enemyRenderers;
-     // آرایه برای تمام رندررهای دشمنان
+    public GameObject player;
+    public GameObject box;
+    public SpriteRenderer[] enemyRenderers;
+   
 
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
         box = GameObject.FindGameObjectWithTag("Box");
         
-        // پیدا کردن تمام اشیاء با تگ Enemy و گرفتن رندررهای آنها
+        
         GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
         enemyRenderers = new SpriteRenderer[enemies.Length];
         
@@ -31,12 +31,7 @@ public class EnemyShow : MonoBehaviour
             {
                 if(renderer != null)
                 {
-                    renderer.color = new Color(
-                        renderer.color.r,
-                        renderer.color.g,
-                        renderer.color.b,
-                        1f // آلفا = 1 (کاملاً مات)
-                    );
+                    renderer.color = new Color(1f,1f,1f,1f);
                 }
             }
         }

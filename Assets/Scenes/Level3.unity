@@ -525,6 +525,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57ab1f0e41dbe3842a11890938f61ed5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lighter: {fileID: 0}
+  light: {fileID: 0}
+  lightRenderer: {fileID: 0}
+  MistRenderer: {fileID: 0}
+  Mist: {fileID: 0}
 --- !u!1001 &106192873
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1517,6 +1522,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06e0818d3d2bd3e48a6e337de3336b9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Box: {fileID: 0}
 --- !u!114 &347511271
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1529,6 +1535,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c5a483376295ba42b0710be88728254, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  StartPoint: {x: 0, y: 0, z: 0}
 --- !u!95 &347511272
 Animator:
   serializedVersion: 5
@@ -2069,6 +2077,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06e0818d3d2bd3e48a6e337de3336b9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Box: {fileID: 0}
 --- !u!114 &499684883
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2081,6 +2090,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c5a483376295ba42b0710be88728254, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  StartPoint: {x: 0, y: 0, z: 0}
 --- !u!95 &499684884
 Animator:
   serializedVersion: 5
@@ -5874,6 +5885,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92919c88faf570340ab9860b73057fe5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  box: {fileID: 0}
+  Mist: {fileID: 0}
+  LightsRenderers: []
 --- !u!1 &1743728381
 GameObject:
   m_ObjectHideFlags: 0
@@ -6148,6 +6163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06e0818d3d2bd3e48a6e337de3336b9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Box: {fileID: 0}
 --- !u!212 &1964083920
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6774,7 +6790,7 @@ MonoBehaviour:
 
     Congratulations
 
-    Awro reached to the destination'
+    You saved Awro'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6916,6 +6932,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b3456130b0464644a35929f9d007bf8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  box: {fileID: 0}
+  Circle: {fileID: 0}
 --- !u!1 &2100018451
 GameObject:
   m_ObjectHideFlags: 0
@@ -7138,6 +7157,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91296196f5be496458f36d74f954f9c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lighter: {fileID: 0}
+  light: {fileID: 0}
+  lightRenderer: {fileID: 0}
+  MistRenderer: {fileID: 0}
 --- !u!70 &2126591841
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

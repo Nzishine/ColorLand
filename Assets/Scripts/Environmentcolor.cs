@@ -2,13 +2,13 @@ using UnityEngine;
 
 public class Environment : MonoBehaviour
 {
-    private GameObject player;
-    private GameObject box;
+    public GameObject player;
+    public GameObject box;
 
-    private GameObject Mist;
+    public GameObject Mist;
 
    
-    private SpriteRenderer[] environmentRenderers; 
+    public SpriteRenderer[] environmentRenderers; 
 
     void Start()
     {
@@ -37,12 +37,7 @@ public class Environment : MonoBehaviour
             foreach(SpriteRenderer renderer in environmentRenderers)
             {
                 
-                    renderer.color = new Color(
-                       1f,
-                       1f,
-                       1f,
-                        1f
-                    );
+                    renderer.color = new Color(1f,1f,1f,1f);
                 
             }
         }

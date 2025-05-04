@@ -6,9 +6,9 @@ public class NewBehaviourScript : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    private GameObject player;
-    private GameObject box;
-    private GameObject Circle;
+    public GameObject player;
+    public GameObject box;
+    public GameObject Circle;
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");

@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class DeathScript : MonoBehaviour
 {
-    private GameObject player;
-    private Vector3 StartPoint;
+    public GameObject player;
+    public Vector3 StartPoint;
 
     void Start()
     {

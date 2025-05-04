@@ -2,10 +2,10 @@ using UnityEngine;
 
 public class Lighter2 : MonoBehaviour
 {
-    private GameObject lighter;
-    private GameObject light;
-    private SpriteRenderer lightRenderer; 
-     private SpriteRenderer MistRenderer;
+    public GameObject lighter;
+    public GameObject light;
+    public SpriteRenderer lightRenderer; 
+    public SpriteRenderer MistRenderer;
 
    
 
@@ -36,7 +36,7 @@ public class Lighter2 : MonoBehaviour
             MistRenderer.material.color = new Color(1f, 1f, 1f, 0.25f);
 
             
-             lightRenderer.color = Color.white;
+             lightRenderer.color = new Color(1f, 1f, 1f, 1f);
              
         }
     }
