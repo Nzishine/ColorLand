@@ -5,14 +5,14 @@ public class Environment : MonoBehaviour
     private GameObject player;
     private GameObject box;
 
-    private GameObject mist;
+   
     private SpriteRenderer[] environmentRenderers; 
 
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
         box = GameObject.FindGameObjectWithTag("Box2");
-        mist = GameObject.FindGameObjectWithTag("Mist");
+        
        
         
         GameObject[] envi = GameObject.FindGameObjectsWithTag("Environment");
@@ -29,7 +29,7 @@ public class Environment : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             box.SetActive(false);
-            mist.SetActive(false);
+            
             foreach(SpriteRenderer renderer in environmentRenderers)
             {
                 

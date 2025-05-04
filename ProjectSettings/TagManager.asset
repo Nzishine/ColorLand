@@ -22,15 +22,17 @@ TagManager:
   - Lighter2
   - Light2
   - Lights
+  - Win
+  - Door
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
-  - 
-  - 
+  - Mist
+  - Enemy
   - 
   - 
   - 
@@ -62,6 +64,12 @@ TagManager:
   - name: player
     uniqueID: 343452291
     locked: 0
+  - name: Enemy
+    uniqueID: 1748187587
+    locked: 0
   - name: Water
     uniqueID: 3035469223
+    locked: 0
+  - name: Mist
+    uniqueID: 3018666741
     locked: 0
